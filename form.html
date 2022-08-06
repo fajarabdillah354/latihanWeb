@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan form animation</title>
+    <style>
+        body {
+            background-image: url(laptop.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .jam {
+            font-size: 25px;
+            position: absolute;
+            right: 435px;
+            bottom: 200px;
+            width: 500px;
+            background-color: white;
+            
+        }
+        .sepatu {
+            padding-left: 35px;
+        }
+        .bt {
+            background-color: turquoise;
+            color: rgb(41, 38, 38);
+            padding: 10px 10px;
+            float: right;
+            margin: 0 15px 5px 0;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+        .bt:hover {
+             background-color: blue;
+              box-shadow: 0 5px 6px black;
+              transform: translateY(-6px);
+              transition: .5s ;
+        }
+        .bt:active {
+           color: white;
+           box-shadow: 0 2px 6px black;
+        }
+        a {
+            text-decoration: none;
+        }
+        h1 {
+            margin: auto;
+            padding-left: 76px;
+            text-shadow: 4px 2px 5px black;
+        }
+        .ff {
+            background-position: center;            
+        }
+        .nav {
+            background-color: wheat;
+            min-height: 50px;
+        }
+
+       ul {
+           list-style: none;
+           text-align: right;
+           padding: 0;
+       }
+       .icon {
+           float: left;
+           background-color: turquoise;
+       }
+       .icon > h2 {
+           margin: 0;
+       }
+      li {
+        display: inline-block;
+        line-height: 50px;
+        padding-left: 70px;
+      }
+      .a {
+          background-color: turquoise;
+          text-align: center;
+      }
+      .mobile {
+          display: none;
+      }
+       @media only sreen and (max-width:600px) {
+       .mobile {
+           display: block;
+       }
+       .dekstop {
+           display: none;
+       }
+       }
+    </style>
+</head>
+<body>
+ 
+    <div class="nav">
+        <ul>
+            <li class="icon dekstop"><h2>media</h2></li>
+            <li class="icon mobile"><h2>M</h2></li>
+            <li class="a"><a href="#">play</a></li>
+            <li class="a"><a href="#">next</a></li>
+            <li class="a"><a href="#">prev</a></li>
+            <li class="a"><a href="#">Get Started</a></li>
+        </ul>
+    </div>
+    <div class="jam">
+        <form action="" class="ff">
+            <h1>login olu UHAMKA 2021</h1>
+            <div class="sepatu">
+                <label for="nama">Nama</label>
+                <input type="text" placeholder="Masukan Nama">
+            </div>
+            <div class="sendal">
+                <label for="pass">Password</label>
+                <input type="password" placeholder="Masukan Password">
+            </div>
+            <button class="bt">Login</button>
+        </form>
+    </div>
+</body>
+</html>

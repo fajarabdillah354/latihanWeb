@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gabut</title>
+    <style>
+      /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+      html,
+      body,
+      div,
+      span,
+      applet,
+      object,
+      iframe,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      blockquote,
+      pre,
+      a,
+      abbr,
+      acronym,
+      address,
+      big,
+      cite,
+      code,
+      del,
+      dfn,
+      em,
+      img,
+      ins,
+      kbd,
+      q,
+      s,
+      samp,
+      small,
+      strike,
+      strong,
+      sub,
+      sup,
+      tt,
+      var,
+      b,
+      u,
+      i,
+      center,
+      dl,
+      dt,
+      dd,
+      ol,
+      ul,
+      li,
+      fieldset,
+      form,
+      label,
+      legend,
+      table,
+      caption,
+      tbody,
+      tfoot,
+      thead,
+      tr,
+      th,
+      td,
+      article,
+      aside,
+      canvas,
+      details,
+      embed,
+      figure,
+      figcaption,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      output,
+      ruby,
+      section,
+      summary,
+      time,
+      mark,
+      audio,
+      video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      }
+      /* HTML5 display-role reset for older browsers */
+      article,
+      aside,
+      details,
+      figcaption,
+      figure,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      section {
+        display: block;
+      }
+      body {
+        line-height: 1;
+      }
+      ol,
+      ul {
+        list-style: none;
+      }
+      blockquote,
+      q {
+        quotes: none;
+      }
+      blockquote:before,
+      blockquote:after,
+      q:before,
+      q:after {
+        content: "";
+        content: none;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      .container {
+        width: 900px;
+        margin: auto;
+        background-color: aliceblue;
+      }
+      body {
+        background-image: url(double-bubble-dark.png);
+      }
+      @font-face {
+        font-family: "kaushan_scriptregular";
+        src: url("kaushanscript-regular-webfont.woff2") format("woff2"), url("kaushanscript-regular-webfont.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      .header h1 {
+        font-size: 80px;
+        font-family: "kaushan_scriptregular";
+        text-shadow: 4px 6px 6px black;
+        padding-top: 10px;
+        padding-left: 20px;
+        font-weight: bolder;
+      }
+      .header ul li {
+        display: inline-block;
+        margin-top: 30px;
+        margin-left: 20px;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .header li a {
+        text-decoration: none;
+      }
+      a:hover {
+        font-size: 25px;
+        color: grey;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+      a:active {
+        color: crimson;
+      }
+      .hero {
+        background-image: url(nitip.png);
+        height: 400px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0 -60px;
+        margin-top: 20px;
+        border-top: 7px solid palevioletred;
+        border-bottom: 7px solid palevioletred;
+      }
+      .main h2 {
+        font-size: 55px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        text-shadow: 0 4px 4px black;
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-bottom: 15px;
+        font-weight: bold;
+      }
+      a {
+        text-decoration: none;
+      }
+      .penulis {
+        font-size: 25px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-weight: bold;
+        margin-left: 20px;
+        margin-bottom: 20px;
+      }
+      .value1 {
+        font-size: 20px;
+        font-family: "Times New Roman", Times, serif;
+        text-indent: 45px;
+        margin-bottom: 20px;
+        padding-left: 5px;
+      }
+      .value2 {
+        font-size: 20px;
+        font-family: "Times New Roman", Times, serif;
+        text-indent: 45px;
+        margin-bottom: 20px;
+        padding-left: 5px;
+      }
+      .value3 {
+        font-size: 20px;
+        font-family: "Times New Roman", Times, serif;
+        text-indent: 45px;
+        margin-bottom: 20px;
+        padding-left: 5px;
+      }
+      .footer {
+        background-color: black;
+        height: 40px;
+      }
+      .footer p {
+        color: white;
+        font-size: 25px;
+        text-align: center;
+      }
+      body {
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>My Notepad</h1>
+        <ul>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">service</a></li>
+          <li><a href="http://instagram.com/fajr_dillah01">about</a></li>
+          <li><a href="#">product</a></li>
+        </ul>
+      </div>
+      <div class="hero"></div>
+      <div class="content">
+        <div class="main">
+          <h2>Terbang Dan Jatuh</h2>
+          <p class="penulis">Di Tulis Oleh <a href="http://instagram.com/fajr_dillah01">Fajar Abdillah Ahmad</a> Pada November-19-2021</p>
+          <p class="value1">
+            kadang semesta menitipkan seseorang bukan untuk bersamanya tapi semesta ingin memberikan kita pelajaran pada kita tentang cinta kalian pernah ngk sih mencintainya seseorang di waktu yang salah ??? kalo iya berarti kita sama tapi
+            bedanya posisi gue tuh bener-bener first love sumpah kalo kalian jadi gue pasti rasanya sakit banget,setelah di bahwa terbang tinggi seakan - akan gue di jatuhkan dari langit,rasanya kaya gue nyalahin diri sendiri karna udah
+            berani jatuhin hati ke perempuan, padahal sebelum gue ngungkapin isi hati gue kita tuh baik - baik aja entah kenapa semua berubah.awal - awak gue baik2 aja hingga pada akhirnya suatu saat gue balik sama dia setelah acara kampus
+            dan mulai malam itu gue ngerasa ada yang beda dengan dia mulai dari sikapnya, chatnya, sampe yang biasanya dia nelfon gue jadi ngk pernah lagi.
+          </p>
+          <p class="value2">
+            2 minggu sudah dia berubah,gue bingung apa yang udah gue perbuat sampe - sampe dia kaya gitu setiap hari gue selalu intropeksi diri.tapi walau kaya gitu gue masih menyapa dia di setiap pagi berharap dia gpp,seriing berjalannya
+            waktu gw beraniin nelfon dia dan memastikan hubungan kita jadian atau enggak karna sebelumnya kita tuh ngk ada hubungan apa - apa tapi kita sama-sama menghargai satu sama lain .akhirnya gue ngomong ke dia, dia memberi gue waktu
+            selama 2 hari.dan tibalah saat yang menegangkan yaitu hasil jawaban dari dia,,,,sampai akhirnya denger "maaf aku ngk bisa untuk ini",entah kenapa dia nangis ya padahal harusnya gue dong.
+          </p>
+          <p class="value3">
+            dari kisah ini gue belajar jangan terlalu berharap sama seseorang karna nanti pas dia nyakitin lu rasanya bukan main - main sakit,terus juga kalo lu belum siap jatuhin hati lu ke seseorang mending ngk usah karna dengan lu
+            jatuhin hatilu pasti ada 2 kemungkinan yaitu di terima atau ngk,ya walaupun sebelumnya kayanya si dia naksir sama lu tapi plis jangan!!! mending lu mendem perasaan itu tapi masih bisa berteman baik dengan si dia dari pada kalo
+            lu jatuhin hatilu nanti tiba - tiba dia berubah ke elunya.
+          </p>
+        </div>
+      </div>
+      <div class="footer">
+        <p>COPYRIGHT 2020 Oleh Fajar Abdillah Ahmad</p>
+      </div>
+    </div>
+  </body>
+</html>

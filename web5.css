@@ -1,0 +1,176 @@
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+     *zoom: 1;
+ }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {background-image: url(ucok.png);}
+.container {width: 900px;
+                  background-color: white;
+                  margin: 50px auto;
+}
+@font-face {
+    font-family: 'kaushan_scriptregular';
+    src: url('kaushanscript-regular-webfont.woff2') format('woff2'),
+         url('kaushanscript-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+h1 {font-size: 70px;
+    font-weight: bold;
+	font-family: "kaushan_scriptregular";
+	padding-bottom: 20px;
+	padding-left: 10px;
+	padding-top: 20px;
+	box-sizing: border-box;
+}
+ul li  {display: inline-block;
+	   font-size: 20px;
+	   margin-left: 7px;
+}
+ ul a {text-decoration: none;
+	    font-size: 25px;
+		padding-left: 10px;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ a:hover{font-weight: bolder;}
+ a:active{color: coral;
+}
+.hero {height: 400px;
+	      background-image: url(laptop.png);
+		  background-position: 0 -55px;
+		  box-sizing: border-box;
+		  background-size: cover;
+	      
+}
+.main h2 {font-size: 40px;
+	 font-weight: bolder;
+	 padding-left: 10px;
+	 margin-top: 40px;
+	 margin-bottom: 20px;
+}
+a {text-decoration: none;}
+.main .poco {font-size: 30px;
+	      font-weight: bold;
+		  padding-left: 10px;
+
+}
+.main  .poco1 {font-size: 20px;
+	         font-variant: small-caps;
+			 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			 padding-left: 10px;
+			 margin-top: 20px;
+}
+.main .poco2 {font-size: 20px;
+	         font-variant: small-caps;
+			 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			 margin-top: 20px;
+			 padding-left: 10px;
+}
+.main .poco3 {font-size: 20px;
+	        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			font-variant: small-caps;
+			margin-top: 20px;
+			padding-left: 10px;
+}
+.main {width: 500px;
+          box-sizing: border-box;
+		  float: left;
+		  padding: 10px;
+}
+.sidebar {width: 400px;
+	          box-sizing: border-box;
+			  float: right;
+			  padding: 5px;
+}
+
+.sidebar img {float: left;
+	                 box-sizing: border-box; 
+					 margin-top: 70px;
+					 margin-right: 10px;
+}
+.sidebar h3 {margin-top: 30px;
+	                   font-size: 35px;
+					   font-weight: bolder;
+}
+.sidebar p {padding-left: 30px;
+	             box-sizing: border-box;
+				 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+				 font-size: 20px;
+				 font-weight: bold;
+				 font-variant: small-caps;
+}
+img {filter: grayscale(80%);}
+.sidebar img {border-radius: 50%;}
+
+	         
+	                

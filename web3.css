@@ -1,0 +1,171 @@
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+     *zoom: 1;
+ }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {font-family: Arial, Helvetica, sans-serif;
+          background-image: url(../test.html/oriental.png);
+          box-sizing: border-box;        
+}
+.topbar {position: fixed;
+             top: 0;
+             left: 0;
+             right: 0;
+             height: 40px;
+             border-bottom: black;
+             background-color: blue;
+             z-index: 9999;
+}
+.container {width: 900px;
+                 margin: 80px auto;
+                 background-color:whitesmoke;
+                 position: relative;
+                 box-sizing: border-box;
+}
+.ig {width: 200px;
+     height: 200px;
+     background-image: url(../test.html/instagram-ribborn.png);
+     background-repeat: no-repeat;
+     display: inline-block;
+     text-indent: -99999px;
+     position: absolute;
+     top: -21px;
+     right:-20px;
+}
+.container h1 {font-size: 50px;
+                      color: black;
+                      margin-left: 20px;
+                      padding-top: 83px;
+                      box-sizing: border-box;
+                      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.container ul li {font-size: 20px;
+                        font-weight: bold;
+                        margin-left: 20px;
+                        margin-top: 5px;
+                        display: inline-block;
+                        margin-bottom: 10px;
+}
+.container a {text-decoration: none;}
+.container a:link {color: maroon;}
+.container a:hover {
+                              font-size: 25px;
+}
+.hero {background-image: url(../test.html/lol.png);
+          height: 400px;
+          background-size: cover;
+          background-position: 0 -200px;
+}
+.content {padding: 20px;}
+.main {width: 500px;
+          padding: 20px;
+          box-sizing: border-box;
+          float: left;    
+}
+.main h2 {font-size: 35px;
+              font-weight: bolder;
+              padding-bottom: 10px;              
+}
+.main .penulis {font-size: 20px;
+                       font-weight: bold;
+}
+.main .lol1 {margin-top: 20px;
+                  word-spacing: 5px;
+                  margin-bottom: 20px;
+}
+.main .lol2 {margin-bottom: 20px;
+                  word-spacing: 5px;
+}
+.footer p {background-color: black;
+               color: white;
+               text-align: center;
+               font-size: 25px;
+               font-weight: bold;
+}
+.sidebar {width: 350px;
+              padding: 10px;
+              box-sizing: border-box;
+              float: right;
+}
+.sidebar img {float: left;
+                      padding: 20px;
+                      box-sizing: border-box;
+
+}
+.sidebar h3 {font-size: 25px;
+                    font-weight: bold;
+                    margin-bottom: 5px;
+}
+img {filter: grayscale(100%);}
+h3:target {
+    background-color: blueviolet;
+}
